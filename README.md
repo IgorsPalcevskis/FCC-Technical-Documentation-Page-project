@@ -1,2 +1,22 @@
 # FCC-Technical-Documentation-Page-project
 Fourth project for Free Code Camps responsive web design certification
+
+In order for the project to be accepted, the following conditions have to be met:
+
+#1 Project must have a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation).
+
+#2 Within the #main-doc element, there are several section elements, each with a class of main-section. There should be a minimum of 5.
+
+#3 The first element within each .main-section should be a header element which contains text that describes the topic of that section.
+
+#4 Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "Javascript and Java" should have a corresponding id="Javascript_and_Java").
+
+#5 The .main-section elements should contain at least 10 p elements total (not each).
+
+#6 The .main-section elements should contain at least 5 code elements total (not each).
+
+#7 The .main-section elements should contain at least 5 li items total (not each).
+
+#8 There must be a nav element with a corresponding id="navbar".
+
+#9 The navbar element should contain one header element which contains 
