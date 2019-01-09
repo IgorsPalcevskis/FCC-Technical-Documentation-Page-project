@@ -8,7 +8,7 @@
 </head>
 <body>
   <nav id="navbar">
-    <header></header>
+    <header><h1>CSS Media Queries</h1></header>
     <a class="nav-link" href="#CSS2_Introduced_Media_Types">CSS2 Introduced Media Types</a>
     <a class="nav-link" href="#CSS3_Introduced_Media_Queries">CSS3 Introduced Media Queries</a>
     <a class="nav-link" href="#Browser_Support">Browser Support</a>
@@ -19,13 +19,13 @@
   </nav>
   <main id="main-doc">
     <section class="main-section" id="CSS2_Introduced_Media_Types">
-      <header>CSS2 Introduced Media Types</header>
-      <p>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.</p>
+      <header><h2>CSS2 Introduced Media Types</h2></header>
+      <p>The <code>@media</code> rule, introduced in CSS2, made it possible to define different style rules for different media types.</p>
       <p>Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.</p>
       <p>Unfortunately these media types never got a lot of support by devices, other than the print media type.</p>
     </section>
     <section class="main-section" id="CSS3_Introduced_Media_Queries">
-      <header>CSS3 Introduced Media Queries</header>
+      <header><h2>CSS3 Introduced Media Queries</h2></header>
       <p>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.</p>
       <p>Media queries can be used to check many things, such as:</p>
       <ul>
@@ -37,33 +37,77 @@
       <p>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</p>
     </section>
     <section class="main-section" id="Browser_Support">
-      <header>Browser Support</header>
-      <p>The numbers in the table specifies the first browser version that fully supports the @media rule.</p>
-<!-- Placeholder for table -->
+      <header><h2>Browser Support</h2></header>
+      <p>The numbers in the table specifies the first browser version that fully supports the <code>@media</code> rule.</p>
+      <table>
+        <tr>
+          <th>Property</th>
+          <th>Chrome</th>
+          <th>Edge</th>
+          <th>Firefox</th>
+          <th>Safari</th>
+          <th>Opera</th>
+        </tr>
+        <tr>
+          <td>@media</td>
+          <td>21.0</td>
+          <td>9.0</td>
+          <td>3.5</td>
+          <td>4.0</td>
+          <td>9.0</td>
+        </tr>
+      </table>
     </section>
     <section class="main-section" id="Media_Query_Syntax">
-      <header>Media Query Syntax</header>
+      <header><h2>Media Query Syntax</h2></header>
       <p>A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.</p>
-<!-- Placeholder for code -->
+      <code>@media not|only mediatype and (expressions) {CSS-Code;}</code>
       <p>The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.</p>
       <p>Unless you use the not or only operators, the media type is optional and the all type will be implied.</p>
       <p>You can also have different stylesheets for different media:</p>
-<!-- Placeholder for code -->
+      <code>&ltlink rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"&gt</code>
     </section>
     <section class="main-section" id="CSS3_Media_Types">
-      <header>CSS3 Media Types</header>
-<!-- Placeholder for table -->
+      <header><h2>CSS3 Media Types</h2></header>
+      <table>
+        <tr>
+          <th>Value</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>all</td>
+          <td>Used for all media type devices</td>
+        </tr>
+        <tr>
+          <td>print</td>
+          <td>Used for printers</td>
+        </tr>
+        <tr>
+          <td>screen</td>
+          <td>Used for computer screens, tablets, smart-phones etc.</td>
+        </tr>
+        <tr>
+          <td>speech</td>
+          <td>Used for screenreaders that "reads" the page out loud</td>
+        </tr>
+      </table>
     </section>
     <section class="main-section" id="Media_Queries_Simple_Examples">
-      <header>Media Queries Simple Examples</header>
+      <header><h2>Media Queries Simple Examples</h2></header>
       <p>One way to use media queries is to have an alternate CSS section right inside your style sheet.</p>
       <p>The following example changes the background-color to lightgreen if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the background-color will be pink):</p>
-<!-- Placeholder for code -->
+      <div>
+        <p>Example</p>
+        <code>@media screen and (min-width: 480px) {body {background-color: lightgreen;}}</code>
+      </div>
       <p>The following example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the menu will be on top of the content):</p>
-<!-- Placeholder for code -->
+      <div>
+        <p>Example</p>
+        <code>@media screen and (min-width: 480px) { #leftsidebar {width: 200px; float: left;} #main {margin-left: 216px;} }</code>
+      </div>
     </section>
     <section class="main-section" id="Reference">
-      <header>Reference</header>
+      <header><h2>Reference</h2></header>
       <ul>
         <li>For a full overview of all the media types and features/expressions, please look at the <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank">@media rule in w3schools CSS reference</a>.</li>
         <li>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/css3_mediaqueries.asp" target="_blank">w3schools.com</a></li>
