@@ -6,10 +6,19 @@ body {
 }
 /* ----------------------------------------------------- navbar CSS */
 nav {
-  border-right: 3px solid grey;
+  border-bottom: 3px solid grey;
+}
+nav>ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  height: 10rem;
+  overflow: auto;
 }
 header>h1 {
   padding: 1rem;
+  margin: 1rem;
+  text-align: center;
 }
 .nav-link {
   display: block;
@@ -22,17 +31,45 @@ header>h1 {
   border-top: 1px solid lightgrey;
 }
 /* ----------------------------------------------------- main CSS */
+main {
+  padding: 1rem;
+}
 code {
   color: white;
   background-color: black;
 }
+h2 {
+  padding: 2rem;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th:first-child, td:first-child {
+  text-align: left;
+}
+th, td {
+  border: 1px solid grey;
+  padding: 1rem;
+  text-align: center;
+}
+.media_types_table_column {
+  text-align: left;
+}
+td {
+  background-color: #f2f2f2;
+}
 /* ---------------------------------------------------------------------------------------------------- For screens wider than 1280px */
 @media only screen and (min-width: 1280px) {
   nav {
+    border-bottom: none;
     position: fixed;
+  }
+  nav>ul {
     height: 100%;
   }
   main {
-    margin-left: 20rem;
+    margin-left: 20.5rem;
+    border-left: 3px solid grey;
   }
 }
