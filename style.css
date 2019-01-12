@@ -37,7 +37,10 @@ main {
 code {
   padding:0.25rem;
   color: white;
-  background-color: black;
+  background-color: #4d4d4d;
+}
+p>code {
+  color: #ff66ff;
 }
 h2 {
   padding: 2rem;
