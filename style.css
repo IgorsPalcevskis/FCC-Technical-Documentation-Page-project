@@ -37,10 +37,41 @@ main {
 code {
   padding:0.25rem;
   color: white;
-  background-color: #4d4d4d;
 }
 p>code {
   color: #ff66ff;
+  background-color: #4d4d4d;
+}
+.example_container {
+  background-color: #e6e6e6;
+  padding: 1rem;
+}
+.example_container>p {
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+.example_code_container {
+  background-color: #4d4d4d;
+  padding: 1rem;
+  border-left: 4px solid #0088cc;
+}
+.media_span {
+  color: #ff66ff;
+}
+.madiatype_span {
+  color: #ffb366;
+}
+.expressions_span {
+  color: #99d6ff;
+}
+.green_code_span {
+  color: #b3ffb3;
+}
+.grey_code_span {
+  color: #bfbfbf;
+}
+.blue_code_span {
+  color: #0088cc;
 }
 h2 {
   padding: 2rem;

@@ -77,11 +77,18 @@
     <section class="main-section" id="Media_Query_Syntax">
       <header><h2>Media Query Syntax</h2></header>
       <p>A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.</p>
-      <code>@media not|only mediatype and (expressions) {CSS-Code;}</code>
+      <div class="example_container">
+        <p>Example</p>
+        <div class="example_code_container">
+          <code><span class="media_span">@media</span> not|only <span class="madiatype_span">mediatype</span> and (<span class="expressions_span">expressions</span>) { <br>  &nbsp <span class="expressions_span">CSS-Code</span>; <br> }</code>
+        </div>
+      </div>
       <p>The result of the query is true if the specified media type matches the type of device the document is being displayed on and all expressions in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.</p>
       <p>Unless you use the not or only operators, the media type is optional and the all type will be implied.</p>
       <p>You can also have different stylesheets for different media:</p>
-      <code>&ltlink rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css"&gt</code>
+      <div class="example_code_container">
+        <code><span class="grey_code_span">&lt</span><span class="blue_code_span">link</span> <span class="expressions_span">rel</span>=<span class="madiatype_span">"stylesheet"</span> <span class="expressions_span">media</span>=<span class="madiatype_span">"mediatype and|not|only (expressions)"</span> <span class="expressions_span">href</span>=<span class="madiatype_span">"print.css"</span><span class="grey_code_span">&gt</span></code>
+      </div>
     </section>
     <section class="main-section" id="CSS3_Media_Types">
       <header><h2>CSS3 Media Types</h2></header>
@@ -112,14 +119,18 @@
       <header><h2>Media Queries Simple Examples</h2></header>
       <p>One way to use media queries is to have an alternate CSS section right inside your style sheet.</p>
       <p>The following example changes the background-color to lightgreen if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the background-color will be pink):</p>
-      <div>
+      <div class="example_container">
         <p>Example</p>
-        <code>@media screen and (min-width: 480px) {body {background-color: lightgreen;}}</code>
+        <div class="example_code_container">
+          <code><span class="media_span">@media</span> <span class="madiatype_span">screen</span> and (<span class="expressions_span">min-width</span>: <span class="green_code_span">480px</span>) {<br>&nbsp <span class="madiatype_span">body</span> {<br>&nbsp &nbsp <span class="expressions_span">background-color</span>: <span class="madiatype_span">lightgreen</span>;<br>&nbsp&nbsp}<br>}</code>
+        </div>
       </div>
       <p>The following example shows a menu that will float to the left of the page if the viewport is 480 pixels wide or wider (if the viewport is less than 480 pixels, the menu will be on top of the content):</p>
-      <div>
+      <div class="example_container">
         <p>Example</p>
-        <code>@media screen and (min-width: 480px) { #leftsidebar {width: 200px; float: left;} #main {margin-left: 216px;} }</code>
+        <div class="example_code_container">
+          <code><span class="media_span">@media</span> <span class="madiatype_span">screen</span> and (<span class="expressions_span">min-width</span>: <span class="green_code_span">480px</span>) { <br>&nbsp <span class="madiatype_span">#leftsidebar</span> {<br>&nbsp &nbsp <span class="expressions_span">width</span>: <span class="green_code_span">200px</span>; <br>&nbsp &nbsp <span class="expressions_span">float</span>: <span class="madiatype_span">left</span>;<br>&nbsp } <br>&nbsp <span class="madiatype_span">#main</span> {<br>&nbsp &nbsp <span class="expressions_span">margin-left</span>: <span class="green_code_span">216px</span>;<br>&nbsp } <br>}</code>
+        </div>
       </div>
     </section>
     <section class="main-section" id="Reference">
