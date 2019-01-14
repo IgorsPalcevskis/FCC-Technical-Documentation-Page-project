@@ -103,6 +103,18 @@ img {
   margin-right: auto;
   display: block;
 }
+.reference_link:link {
+  text-decoration: underline;
+  color: black;
+}
+.reference_link:visited {
+  text-decoration: underline;
+  color: black;
+}
+.reference_link:hover {
+  text-decoration: none;
+  color: #333333;
+}
 /* ---------------------------------------------------------------------------------------------------- For screens wider than 1280px */
 @media only screen and (min-width: 1280px) {
   nav {
