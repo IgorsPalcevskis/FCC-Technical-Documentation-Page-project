@@ -15,6 +15,9 @@ nav>ul {
   height: 10rem;
   overflow: auto;
 }
+nav>ul>li:hover {
+  background-color: #e6e6e6;
+}
 header>h1 {
   padding: 1rem;
   margin: 1rem;
