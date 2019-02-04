@@ -6,8 +6,48 @@ body {
 }
 /* ----------------------------------------------------- navbar CSS */
 nav {
-  border-bottom: 3px solid grey;
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+nav li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #f4f4f4;
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+nav .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+/* nav {
+  border-bottom: 3px solid grey;
+} */
 /* ----------------------------------------------------- navbar burger style manu CSS */
 nav .menu-icon {
   cursor: pointer;
@@ -67,6 +107,7 @@ nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 nav .menu-btn {
   display: none;
 }
+/*
 nav>ul {
   list-style-type: none;
   padding: 0px;
@@ -91,7 +132,7 @@ header>h1 {
 }
 .first-nav-link {
   border-top: 1px solid lightgrey;
-}
+} */
 /* ----------------------------------------------------- main CSS */
 main {
   padding: 1rem;
@@ -176,7 +217,7 @@ img {
 }
 /* ---------------------------------------------------------------------------------------------------- For screens wider than 1280px */
 @media only screen and (min-width: 1280px) {
-  nav {
+  /* nav {
     border-bottom: none;
     position: fixed;
   }
@@ -186,5 +227,19 @@ img {
   main {
     margin-left: 20.5rem;
     border-left: 3px solid grey;
+  } */
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  nav .menu-icon {
+    display: none;
   }
 }
