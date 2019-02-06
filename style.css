@@ -62,7 +62,7 @@ body {
   display: block;
   height: 2px;
   position: relative;
-  transition: background .2s ease-out;
+  transition: .2s ease-out;
   width: 18px;
 }
 .header .menu-icon .navicon:before,
@@ -213,5 +213,19 @@ img {
     margin-top: 0px;
     margin-left: 22rem;
     border-left: 3px solid grey;
+  } */
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding: 20px 30px;
+  }
+  nav .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  nav .menu-icon {
+    display: none;
   }
 }
